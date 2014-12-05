@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="71ab477c-c0da-4730-b5ce-88853a27275c" activeEnvironment="Default environment" name="TestWsdlServer" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
