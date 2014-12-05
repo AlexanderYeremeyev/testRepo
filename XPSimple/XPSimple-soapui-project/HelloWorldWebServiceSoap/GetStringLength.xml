@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="4d26ef98-0ad3-4f9d-bbd0-9bf5fc208d38" isOneWay="false" action="http://shadow.org/GetStringLength" name="GetStringLength" bindingOperationName="GetStringLength" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="4d26ef98-0ad3-4f9d-bbd0-9bf5fc208d38fileName">GetStringLength</con:setting></con:settings><con:call id="3262253b-c02a-49c4-b2d3-7fadf9be9c5d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <shad:GetStringLength>\r
+         <!--Optional:-->\r
+         <shad:value>?</shad:value>\r
+      </shad:GetStringLength>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/GetStringLength"/></con:call></con:operation>

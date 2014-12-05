@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="69dc43aa-165f-4401-996c-242a4ca57cf2" isOneWay="false" action="http://shadow.org/GetSmallRandomIntegerFigure" name="GetSmallRandomIntegerFigure" bindingOperationName="GetSmallRandomIntegerFigure" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="69dc43aa-165f-4401-996c-242a4ca57cf2fileName">GetSmallRandomIntegerFigure</con:setting></con:settings><con:call id="e60d8a9e-0a1f-412e-83e3-516c64dd9868" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:shad="http://shadow.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <shad:GetSmallRandomIntegerFigure/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/HelloWorldWebServiceSoap/GetSmallRandomIntegerFigureRequest"/></con:call></con:operation>

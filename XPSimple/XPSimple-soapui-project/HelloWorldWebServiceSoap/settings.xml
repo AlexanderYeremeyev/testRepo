@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:WsdlInterface" id="6d5e0125-d034-465d-bbfd-684929a2e5f3" wsaVersion="NONE" name="HelloWorldWebServiceSoap" type="wsdl" bindingName="{http://shadow.org/}HelloWorldWebServiceSoap" soapVersion="1_1" anonymous="optional" definition="http://eremeev-w8/servers/wsdl/simple/server.asmx?wsdl" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="6d5e0125-d034-465d-bbfd-684929a2e5f3fileName">HelloWorldWebServiceSoap</con:setting></con:settings><con:definitionCache type="TEXT" rootPart="http://eremeev-w8/servers/wsdl/simple/server.asmx?wsdl"><con:part><con:url>http://eremeev-w8/servers/wsdl/simple/server.asmx?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://shadow.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://shadow.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://shadow.org/">
+      <s:element name="HelloWorld">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AdditionFigures">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="first" type="s:double"/>
+            <s:element minOccurs="1" maxOccurs="1" name="second" type="s:double"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AdditionFiguresResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AdditionFiguresResult" type="s:double"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSmallRandomIntegerFigure">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetSmallRandomIntegerFigureResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetSmallRandomIntegerFigureResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStringLength">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="value" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStringLengthResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetStringLengthResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnInputString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="value" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnInputStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReturnInputStringResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld"/>
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse"/>
+  </wsdl:message>
+  <wsdl:message name="AdditionFiguresSoapIn">
+    <wsdl:part name="parameters" element="tns:AdditionFigures"/>
+  </wsdl:message>
+  <wsdl:message name="AdditionFiguresSoapOut">
+    <wsdl:part name="parameters" element="tns:AdditionFiguresResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetSmallRandomIntegerFigureSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSmallRandomIntegerFigure"/>
+  </wsdl:message>
+  <wsdl:message name="GetSmallRandomIntegerFigureSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSmallRandomIntegerFigureResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetStringLengthSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStringLength"/>
+  </wsdl:message>
+  <wsdl:message name="GetStringLengthSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStringLengthResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ReturnInputStringSoapIn">
+    <wsdl:part name="parameters" element="tns:ReturnInputString"/>
+  </wsdl:message>
+  <wsdl:message name="ReturnInputStringSoapOut">
+    <wsdl:part name="parameters" element="tns:ReturnInputStringResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="HelloWorldWebServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn"/>
+      <wsdl:output message="tns:HelloWorldSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="AdditionFigures">
+      <wsdl:input message="tns:AdditionFiguresSoapIn"/>
+      <wsdl:output message="tns:AdditionFiguresSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSmallRandomIntegerFigure">
+      <wsdl:input message="tns:GetSmallRandomIntegerFigureSoapIn"/>
+      <wsdl:output message="tns:GetSmallRandomIntegerFigureSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetStringLength">
+      <wsdl:input message="tns:GetStringLengthSoapIn"/>
+      <wsdl:output message="tns:GetStringLengthSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnInputString">
+      <wsdl:input message="tns:ReturnInputStringSoapIn"/>
+      <wsdl:output message="tns:ReturnInputStringSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HelloWorldWebServiceSoap" type="tns:HelloWorldWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://shadow.org/HelloWorld" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AdditionFigures">
+      <soap:operation soapAction="http://shadow.org/AdditionFigures" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSmallRandomIntegerFigure">
+      <soap:operation soapAction="http://shadow.org/GetSmallRandomIntegerFigure" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStringLength">
+      <soap:operation soapAction="http://shadow.org/GetStringLength" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnInputString">
+      <soap:operation soapAction="http://shadow.org/ReturnInputString" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HelloWorldWebServiceSoap12" type="tns:HelloWorldWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://shadow.org/HelloWorld" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AdditionFigures">
+      <soap12:operation soapAction="http://shadow.org/AdditionFigures" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSmallRandomIntegerFigure">
+      <soap12:operation soapAction="http://shadow.org/GetSmallRandomIntegerFigure" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStringLength">
+      <soap12:operation soapAction="http://shadow.org/GetStringLength" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnInputString">
+      <soap12:operation soapAction="http://shadow.org/ReturnInputString" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HelloWorldWebService">
+    <wsdl:port name="HelloWorldWebServiceSoap" binding="tns:HelloWorldWebServiceSoap">
+      <soap:address location="http://eremeev-w8/servers/wsdl/simple/server.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="HelloWorldWebServiceSoap12" binding="tns:HelloWorldWebServiceSoap12">
+      <soap12:address location="http://eremeev-w8/servers/wsdl/simple/server.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint></con:endpoints></con:interface>
