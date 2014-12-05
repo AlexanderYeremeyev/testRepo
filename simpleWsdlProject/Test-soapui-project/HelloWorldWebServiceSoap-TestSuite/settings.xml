@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="709a1950-bce9-45a7-aa7d-246a4d33a54f" name="HelloWorldWebServiceSoap TestSuite" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="709a1950-bce9-45a7-aa7d-246a4d33a54ffileName">HelloWorldWebServiceSoap-TestSuite</con:setting></con:settings><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>

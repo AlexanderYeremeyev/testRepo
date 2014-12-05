@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="411668c2-5415-48dc-95e5-e50eeb874808" isOneWay="false" action="http://shadow.org/HelloWorld" name="HelloWorld" bindingOperationName="HelloWorld" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="411668c2-5415-48dc-95e5-e50eeb874808fileName">HelloWorld</con:setting></con:settings><con:call id="d279e95a-e9e9-49ec-a303-94232a195346" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:shad="http://shadow.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <shad:HelloWorld>\r
+         <!--Optional:-->\r
+         <shad:name>?</shad:name>\r
+      </shad:HelloWorld>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/HelloWorldWebServiceSoap/HelloWorldRequest"/></con:call></con:operation>

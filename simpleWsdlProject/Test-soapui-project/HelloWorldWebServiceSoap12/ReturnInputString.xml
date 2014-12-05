@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="ffd3b12a-e35c-42d3-a5af-d65349eafc7f" isOneWay="false" action="http://shadow.org/ReturnInputString" name="ReturnInputString" bindingOperationName="ReturnInputString" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="ffd3b12a-e35c-42d3-a5af-d65349eafc7ffileName">ReturnInputString</con:setting></con:settings><con:call id="2eb943da-36cd-44a3-8579-8894824678a7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:shad="http://shadow.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <shad:ReturnInputString>\r
+         <!--Optional:-->\r
+         <shad:value>?</shad:value>\r
+      </shad:ReturnInputString>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/HelloWorldWebServiceSoap/ReturnInputStringRequest"/></con:call></con:operation>

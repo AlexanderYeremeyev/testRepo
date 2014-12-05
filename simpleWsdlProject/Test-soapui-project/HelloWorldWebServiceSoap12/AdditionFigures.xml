@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="9a515bbf-a32a-40e5-aa3e-aaa1eebe0333" isOneWay="false" action="http://shadow.org/AdditionFigures" name="AdditionFigures" bindingOperationName="AdditionFigures" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="9a515bbf-a32a-40e5-aa3e-aaa1eebe0333fileName">AdditionFigures</con:setting></con:settings><con:call id="292b2817-4655-4649-b10f-1c318ec1a4f3" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:shad="http://shadow.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <shad:AdditionFigures>\r
+         <shad:first>?</shad:first>\r
+         <shad:second>?</shad:second>\r
+      </shad:AdditionFigures>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/HelloWorldWebServiceSoap/AdditionFiguresRequest"/></con:call></con:operation>

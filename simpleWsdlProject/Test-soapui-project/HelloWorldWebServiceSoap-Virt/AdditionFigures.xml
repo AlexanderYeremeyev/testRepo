@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="AdditionFigures" id="bbe240a1-9360-401e-917c-4b767757eda0" interface="HelloWorldWebServiceSoap" operation="AdditionFigures" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="bbe240a1-9360-401e-917c-4b767757eda0fileName">AdditionFigures</con:setting></con:settings><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="a6fb21ca-63b8-4583-a7d4-cebfd702b838" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <shad:AdditionFiguresResponse>
+         <shad:AdditionFiguresResult>?</shad:AdditionFiguresResult>
+      </shad:AdditionFiguresResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/AdditionFigures"/></con:response><con:dispatchConfig/></con:mockOperation>

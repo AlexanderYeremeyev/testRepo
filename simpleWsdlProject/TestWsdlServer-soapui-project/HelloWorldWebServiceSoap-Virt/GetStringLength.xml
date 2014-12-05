@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<con:mockOperation name="GetStringLength" id="1b16b37b-7bd7-4a64-ac89-6b4d3c48c2ac" interface="HelloWorldWebServiceSoap" operation="GetStringLength" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="1b16b37b-7bd7-4a64-ac89-6b4d3c48c2acfileName">GetStringLength</con:setting></con:settings><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="2faba865-6e1e-4e79-87da-f1a4c4e05fc7" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <shad:GetStringLengthResponse>
-         <shad:GetStringLengthResult>?</shad:GetStringLengthResult>
-      </shad:GetStringLengthResponse>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/GetStringLength"/></con:response><con:dispatchConfig/></con:mockOperation>

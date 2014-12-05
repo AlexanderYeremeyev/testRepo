@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="da51299f-8c5c-4af1-a326-12259077184b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="HelloWorldWebServiceSoap TestSuite" searchProperties="true" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="da51299f-8c5c-4af1-a326-12259077184bfileName">HelloWorldWebServiceSoap-TestSuite</con:setting></con:settings><con:testStep type="request" id="b536e1b9-ff03-49c4-a3b5-0f9d1dd73f45" name="AdditionFigures"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HelloWorldWebServiceSoap</con:interface><con:operation>AdditionFigures</con:operation><con:request name="AdditionFigures" id="fe19f61c-20ee-4791-a729-269d0150bebc"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <shad:AdditionFigures>\r
+         <shad:first>?</shad:first>\r
+         <shad:second>?</shad:second>\r
+      </shad:AdditionFigures>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://shadow.org/AdditionFigures"/></con:request></con:config></con:testStep><con:testStep type="request" id="fca5bdfa-acec-49da-9958-bfd63ccd7c4e" name="GetSmallRandomIntegerFigure"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HelloWorldWebServiceSoap</con:interface><con:operation>GetSmallRandomIntegerFigure</con:operation><con:request name="GetSmallRandomIntegerFigure" id="61df50aa-d27f-4115-b342-7d5f2b783188"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <shad:GetSmallRandomIntegerFigure/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://shadow.org/GetSmallRandomIntegerFigure"/></con:request></con:config></con:testStep><con:testStep type="request" id="160ec489-715a-42fc-913e-87d72d34ec53" name="GetStringLength"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HelloWorldWebServiceSoap</con:interface><con:operation>GetStringLength</con:operation><con:request name="GetStringLength" id="2e2f0a68-ff82-47d0-84a0-dcf642c00722"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <shad:GetStringLength>\r
+         <!--Optional:-->\r
+         <shad:value>?</shad:value>\r
+      </shad:GetStringLength>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://shadow.org/GetStringLength"/></con:request></con:config></con:testStep><con:testStep type="request" id="3e6b0071-1a35-4510-adb3-6243efd715f5" name="HelloWorld"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HelloWorldWebServiceSoap</con:interface><con:operation>HelloWorld</con:operation><con:request name="HelloWorld" id="d4a612da-7aca-4288-9123-74352628e93b"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <shad:HelloWorld>\r
+         <!--Optional:-->\r
+         <shad:name>?</shad:name>\r
+      </shad:HelloWorld>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://shadow.org/HelloWorld"/></con:request></con:config></con:testStep><con:testStep type="request" id="f13e3ee1-c385-4b3d-8926-36a70a44f6ed" name="ReturnInputString"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HelloWorldWebServiceSoap</con:interface><con:operation>ReturnInputString</con:operation><con:request name="ReturnInputString" id="25641553-0e05-4735-876c-1b0c7a7cd60f"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <shad:ReturnInputString>\r
+         <!--Optional:-->\r
+         <shad:value>?</shad:value>\r
+      </shad:ReturnInputString>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://shadow.org/ReturnInputString"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>
