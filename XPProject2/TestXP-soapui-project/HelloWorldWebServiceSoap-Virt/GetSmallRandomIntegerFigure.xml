@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="GetSmallRandomIntegerFigure" id="6e6b11c0-3ea8-435e-b031-1d61dc6f1682" interface="HelloWorldWebServiceSoap" operation="GetSmallRandomIntegerFigure" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="6e6b11c0-3ea8-435e-b031-1d61dc6f1682fileName">GetSmallRandomIntegerFigure</con:setting></con:settings><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="4636c9dd-60d6-489b-85c6-6f690a685ff4" httpResponseStatus="200" encoding="UTF-8" dataSource=""><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <shad:GetSmallRandomIntegerFigureResponse>
+         <shad:GetSmallRandomIntegerFigureResult>?</shad:GetSmallRandomIntegerFigureResult>
+      </shad:GetSmallRandomIntegerFigureResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/GetSmallRandomIntegerFigure"/></con:response><con:dispatchConfig/></con:mockOperation>

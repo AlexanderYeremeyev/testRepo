@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="0049d47f-01bf-4067-8f9f-cb849b175aba" activeEnvironment="Default environment" name="TestXP" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="0049d47f-01bf-4067-8f9f-cb849b175abafileName">TestXP-soapui-project</con:setting></con:settings><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/></con:soapui-project>

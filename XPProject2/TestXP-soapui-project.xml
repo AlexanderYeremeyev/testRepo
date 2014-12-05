@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="0049d47f-01bf-4067-8f9f-cb849b175aba" activeEnvironment="Default environment" name="TestXP" resourceRoot="" soapui-version="6.0.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="f84bee57-302f-4ccf-bdbb-05c635bdcd91" wsaVersion="NONE" name="HelloWorldWebServiceSoap12" type="wsdl" bindingName="{http://shadow.org/}HelloWorldWebServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://eremeev-w8/servers/wsdl/simple/server.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint></con:endpoints><con:operation id="6844e4d2-03e9-473e-b830-e38dfb10ae6f" isOneWay="false" action="http://shadow.org/AdditionFigures" name="AdditionFigures" bindingOperationName="AdditionFigures" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1ea61443-e7cc-4b4a-96c2-51709226bc64" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:shad="http://shadow.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <shad:AdditionFigures>\r
+         <shad:first>?</shad:first>\r
+         <shad:second>?</shad:second>\r
+      </shad:AdditionFigures>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/HelloWorldWebServiceSoap/AdditionFiguresRequest"/></con:call></con:operation><con:operation id="a4f6a756-44a7-4ce4-934f-9d707c3c2203" isOneWay="false" action="http://shadow.org/GetSmallRandomIntegerFigure" name="GetSmallRandomIntegerFigure" bindingOperationName="GetSmallRandomIntegerFigure" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1260340e-2d3d-40b7-9a93-464075e28aae" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:shad="http://shadow.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <shad:GetSmallRandomIntegerFigure/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/HelloWorldWebServiceSoap/GetSmallRandomIntegerFigureRequest"/></con:call></con:operation><con:operation id="92ef53af-2413-4511-9029-1204c8e62be7" isOneWay="false" action="http://shadow.org/GetStringLength" name="GetStringLength" bindingOperationName="GetStringLength" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f622dac0-651d-4764-95c6-fbf64d79df62" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:shad="http://shadow.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <shad:GetStringLength>\r
+         <!--Optional:-->\r
+         <shad:value>?</shad:value>\r
+      </shad:GetStringLength>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/HelloWorldWebServiceSoap/GetStringLengthRequest"/></con:call></con:operation><con:operation id="43bb6347-20d7-4057-8bf6-15753e8b3835" isOneWay="false" action="http://shadow.org/HelloWorld" name="HelloWorld" bindingOperationName="HelloWorld" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="73249194-03d3-49fd-81ba-a4f61ca3f8fa" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:shad="http://shadow.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <shad:HelloWorld>\r
+         <!--Optional:-->\r
+         <shad:name>?</shad:name>\r
+      </shad:HelloWorld>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/HelloWorldWebServiceSoap/HelloWorldRequest"/></con:call></con:operation><con:operation id="6374e082-516c-4aad-b81e-a118d3589f41" isOneWay="false" action="http://shadow.org/ReturnInputString" name="ReturnInputString" bindingOperationName="ReturnInputString" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d6e5891d-ffb7-4a40-b8c2-c987fabd501f" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:shad="http://shadow.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <shad:ReturnInputString>\r
+         <!--Optional:-->\r
+         <shad:value>?</shad:value>\r
+      </shad:ReturnInputString>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/HelloWorldWebServiceSoap/ReturnInputStringRequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="facd90ba-3de8-4560-9f0d-177806a70ab5" wsaVersion="NONE" name="HelloWorldWebServiceSoap" type="wsdl" bindingName="{http://shadow.org/}HelloWorldWebServiceSoap" soapVersion="1_1" anonymous="optional" definition="http://eremeev-w8/servers/wsdl/simple/server.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://eremeev-w8/servers/wsdl/simple/server.asmx?wsdl"><con:part><con:url>http://eremeev-w8/servers/wsdl/simple/server.asmx?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://shadow.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://shadow.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://shadow.org/">
+      <s:element name="HelloWorld">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AdditionFigures">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="first" type="s:double"/>
+            <s:element minOccurs="1" maxOccurs="1" name="second" type="s:double"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AdditionFiguresResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AdditionFiguresResult" type="s:double"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSmallRandomIntegerFigure">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetSmallRandomIntegerFigureResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetSmallRandomIntegerFigureResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStringLength">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="value" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStringLengthResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetStringLengthResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnInputString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="value" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnInputStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReturnInputStringResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld"/>
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse"/>
+  </wsdl:message>
+  <wsdl:message name="AdditionFiguresSoapIn">
+    <wsdl:part name="parameters" element="tns:AdditionFigures"/>
+  </wsdl:message>
+  <wsdl:message name="AdditionFiguresSoapOut">
+    <wsdl:part name="parameters" element="tns:AdditionFiguresResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetSmallRandomIntegerFigureSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSmallRandomIntegerFigure"/>
+  </wsdl:message>
+  <wsdl:message name="GetSmallRandomIntegerFigureSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSmallRandomIntegerFigureResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetStringLengthSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStringLength"/>
+  </wsdl:message>
+  <wsdl:message name="GetStringLengthSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStringLengthResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ReturnInputStringSoapIn">
+    <wsdl:part name="parameters" element="tns:ReturnInputString"/>
+  </wsdl:message>
+  <wsdl:message name="ReturnInputStringSoapOut">
+    <wsdl:part name="parameters" element="tns:ReturnInputStringResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="HelloWorldWebServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn"/>
+      <wsdl:output message="tns:HelloWorldSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="AdditionFigures">
+      <wsdl:input message="tns:AdditionFiguresSoapIn"/>
+      <wsdl:output message="tns:AdditionFiguresSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSmallRandomIntegerFigure">
+      <wsdl:input message="tns:GetSmallRandomIntegerFigureSoapIn"/>
+      <wsdl:output message="tns:GetSmallRandomIntegerFigureSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetStringLength">
+      <wsdl:input message="tns:GetStringLengthSoapIn"/>
+      <wsdl:output message="tns:GetStringLengthSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnInputString">
+      <wsdl:input message="tns:ReturnInputStringSoapIn"/>
+      <wsdl:output message="tns:ReturnInputStringSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HelloWorldWebServiceSoap" type="tns:HelloWorldWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://shadow.org/HelloWorld" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AdditionFigures">
+      <soap:operation soapAction="http://shadow.org/AdditionFigures" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSmallRandomIntegerFigure">
+      <soap:operation soapAction="http://shadow.org/GetSmallRandomIntegerFigure" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStringLength">
+      <soap:operation soapAction="http://shadow.org/GetStringLength" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnInputString">
+      <soap:operation soapAction="http://shadow.org/ReturnInputString" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HelloWorldWebServiceSoap12" type="tns:HelloWorldWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://shadow.org/HelloWorld" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AdditionFigures">
+      <soap12:operation soapAction="http://shadow.org/AdditionFigures" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSmallRandomIntegerFigure">
+      <soap12:operation soapAction="http://shadow.org/GetSmallRandomIntegerFigure" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStringLength">
+      <soap12:operation soapAction="http://shadow.org/GetStringLength" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnInputString">
+      <soap12:operation soapAction="http://shadow.org/ReturnInputString" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HelloWorldWebService">
+    <wsdl:port name="HelloWorldWebServiceSoap" binding="tns:HelloWorldWebServiceSoap">
+      <soap:address location="http://eremeev-w8/servers/wsdl/simple/server.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="HelloWorldWebServiceSoap12" binding="tns:HelloWorldWebServiceSoap12">
+      <soap12:address location="http://eremeev-w8/servers/wsdl/simple/server.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://VXP_X86:8088/mockHelloWorldWebServiceSoap</con:endpoint><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint></con:endpoints><con:operation id="e1e76b0f-7017-4be0-9b6d-d3f25b867cca" isOneWay="false" action="http://shadow.org/AdditionFigures" name="AdditionFigures" bindingOperationName="AdditionFigures" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="86c2319d-4fb3-4a22-a657-1565e8e69404" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <shad:AdditionFigures>
+         <shad:first>1</shad:first>
+         <shad:second>2</shad:second>
+      </shad:AdditionFigures>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/AdditionFigures"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="df26a846-10f7-4ba8-8bc2-62b2f82645ba" isOneWay="false" action="http://shadow.org/GetSmallRandomIntegerFigure" name="GetSmallRandomIntegerFigure" bindingOperationName="GetSmallRandomIntegerFigure" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a15b2530-04aa-4213-a2a7-41b4e8f357d2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <shad:GetSmallRandomIntegerFigure/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/GetSmallRandomIntegerFigure"/></con:call></con:operation><con:operation id="3c45739d-eed0-49c6-9b9f-aebf5c615b51" isOneWay="false" action="http://shadow.org/GetStringLength" name="GetStringLength" bindingOperationName="GetStringLength" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fd77e328-1e06-4cfe-a86a-14d28a47dccb" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <shad:GetStringLength>\r
+         <!--Optional:-->\r
+         <shad:value>?</shad:value>\r
+      </shad:GetStringLength>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/GetStringLength"/></con:call></con:operation><con:operation id="f9d48a99-4313-42d1-af96-c5a9793d3add" isOneWay="false" action="http://shadow.org/HelloWorld" name="HelloWorld" bindingOperationName="HelloWorld" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8a309358-cec8-409a-a9b9-e24c9260f58d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <shad:HelloWorld>\r
+         <!--Optional:-->\r
+         <shad:name>?</shad:name>\r
+      </shad:HelloWorld>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/HelloWorld"/></con:call></con:operation><con:operation id="27a54388-88cb-4bc5-b0c0-d918d83cc593" isOneWay="false" action="http://shadow.org/ReturnInputString" name="ReturnInputString" bindingOperationName="ReturnInputString" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="35d03b60-5174-47a7-b9da-019b6a5fc287" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <shad:ReturnInputString>\r
+         <!--Optional:-->\r
+         <shad:value>?</shad:value>\r
+      </shad:ReturnInputString>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/ReturnInputString"/></con:call></con:operation></con:interface><con:testSuite id="3be5e456-2f5b-4f23-bda7-ce5c508e9566" name="HelloWorldWebServiceSoap TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="392b22df-d851-42f7-9090-3c30da65163e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="HelloWorldWebServiceSoap TestSuite" searchProperties="true"><con:settings/><con:testStep type="request" id="7d7a4db9-9711-4b9e-a6fc-9e86a388f135" name="AdditionFigures"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HelloWorldWebServiceSoap</con:interface><con:operation>AdditionFigures</con:operation><con:request name="AdditionFigures" id="4c3cc8f4-fb46-46d6-a780-5f6014aa6fe7"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <shad:AdditionFigures>\r
+         <shad:first>?</shad:first>\r
+         <shad:second>?</shad:second>\r
+      </shad:AdditionFigures>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://shadow.org/AdditionFigures"/></con:request></con:config></con:testStep><con:testStep type="request" id="1c928a60-8e27-4769-854e-d9a051b11356" name="GetSmallRandomIntegerFigure"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HelloWorldWebServiceSoap</con:interface><con:operation>GetSmallRandomIntegerFigure</con:operation><con:request name="GetSmallRandomIntegerFigure" id="0bd97d6e-9e79-4e8c-b3ad-0a3db156a354"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <shad:GetSmallRandomIntegerFigure/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://shadow.org/GetSmallRandomIntegerFigure"/></con:request></con:config></con:testStep><con:testStep type="request" id="0000abb2-9394-48a6-ab50-743628afebf2" name="GetStringLength"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HelloWorldWebServiceSoap</con:interface><con:operation>GetStringLength</con:operation><con:request name="GetStringLength" id="f5cc899b-3fa8-46ba-be35-5a7e95c7ddb2"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <shad:GetStringLength>\r
+         <!--Optional:-->\r
+         <shad:value>?</shad:value>\r
+      </shad:GetStringLength>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://shadow.org/GetStringLength"/></con:request></con:config></con:testStep><con:testStep type="request" id="a4c20e34-de10-45cc-8be5-75644c4f946e" name="HelloWorld"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HelloWorldWebServiceSoap</con:interface><con:operation>HelloWorld</con:operation><con:request name="HelloWorld" id="fc3ca8af-6450-4207-b0ff-b67abf168b7d"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <shad:HelloWorld>\r
+         <!--Optional:-->\r
+         <shad:name>?</shad:name>\r
+      </shad:HelloWorld>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://shadow.org/HelloWorld"/></con:request></con:config></con:testStep><con:testStep type="request" id="fd07cb19-3aba-4d93-be2e-91ccaa6e146d" name="ReturnInputString"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HelloWorldWebServiceSoap</con:interface><con:operation>ReturnInputString</con:operation><con:request name="ReturnInputString" id="1bd6f0de-c217-4474-b6dc-f096c1240ce3"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://eremeev-w8/servers/wsdl/simple/server.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <shad:ReturnInputString>\r
+         <!--Optional:-->\r
+         <shad:value>?</shad:value>\r
+      </shad:ReturnInputString>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://shadow.org/ReturnInputString"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:mockService id="c51381cd-6545-44b9-9dc5-109a99dabfae" port="8088" path="/mockHelloWorldWebServiceSoap" host="VXP_X86" name="HelloWorldWebServiceSoap Virt"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:constraints><con:congestion>0</con:congestion><con:inputBandwidth>125</con:inputBandwidth><con:outputBandwidth>125</con:outputBandwidth><con:maxThreadPoolCapacity>20</con:maxThreadPoolCapacity><con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity><con:virtError><con:start>-1</con:start></con:virtError></con:constraints><con:mockOperation name="AdditionFigures" id="81cdf829-c9ed-49c7-a6ac-03527bd6ebcf" interface="HelloWorldWebServiceSoap" operation="AdditionFigures"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="31160297-7cef-4623-b402-8150ff075353" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <shad:AdditionFiguresResponse>
+         <shad:AdditionFiguresResult>?</shad:AdditionFiguresResult>
+      </shad:AdditionFiguresResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/AdditionFigures"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="GetSmallRandomIntegerFigure" id="6e6b11c0-3ea8-435e-b031-1d61dc6f1682" interface="HelloWorldWebServiceSoap" operation="GetSmallRandomIntegerFigure"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="4636c9dd-60d6-489b-85c6-6f690a685ff4" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <shad:GetSmallRandomIntegerFigureResponse>
+         <shad:GetSmallRandomIntegerFigureResult>?</shad:GetSmallRandomIntegerFigureResult>
+      </shad:GetSmallRandomIntegerFigureResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/GetSmallRandomIntegerFigure"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="GetStringLength" id="0ebfa95c-d71e-4291-998f-eaaecd4feafb" interface="HelloWorldWebServiceSoap" operation="GetStringLength"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="4c395b51-ef71-476c-b641-70dce007c793" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <shad:GetStringLengthResponse>
+         <shad:GetStringLengthResult>?</shad:GetStringLengthResult>
+      </shad:GetStringLengthResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/GetStringLength"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="HelloWorld" id="c6613730-4819-4711-a23f-f6fbd7bf8bc4" interface="HelloWorldWebServiceSoap" operation="HelloWorld"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="371cecff-53bf-4c4f-91fc-2740abe2fe4d" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <shad:HelloWorldResponse>
+         <!--Optional:-->
+         <shad:HelloWorldResult>?</shad:HelloWorldResult>
+      </shad:HelloWorldResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/HelloWorld"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="ReturnInputString" id="208d7d85-b6fc-461d-b334-5d759eac817c" interface="HelloWorldWebServiceSoap" operation="ReturnInputString"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="0dc7b153-87a7-4354-9488-fe29723da6e6" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <shad:ReturnInputStringResponse>
+         <!--Optional:-->
+         <shad:ReturnInputStringResult>?</shad:ReturnInputStringResult>
+      </shad:ReturnInputStringResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/ReturnInputString"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:reporting><con:reportTemplates/><con:xmlTemplates/><con:parameters/></con:reporting></con:soapui-project>

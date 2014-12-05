@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="HelloWorld" id="c6613730-4819-4711-a23f-f6fbd7bf8bc4" interface="HelloWorldWebServiceSoap" operation="HelloWorld" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="c6613730-4819-4711-a23f-f6fbd7bf8bc4fileName">HelloWorld</con:setting></con:settings><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="371cecff-53bf-4c4f-91fc-2740abe2fe4d" httpResponseStatus="200" encoding="UTF-8" dataSource=""><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <shad:HelloWorldResponse>
+         <!--Optional:-->
+         <shad:HelloWorldResult>?</shad:HelloWorldResult>
+      </shad:HelloWorldResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/HelloWorld"/></con:response><con:dispatchConfig/></con:mockOperation>
