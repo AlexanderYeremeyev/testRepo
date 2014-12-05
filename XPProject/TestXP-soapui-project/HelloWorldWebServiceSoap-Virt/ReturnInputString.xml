@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="ReturnInputString" id="208d7d85-b6fc-461d-b334-5d759eac817c" interface="HelloWorldWebServiceSoap" operation="ReturnInputString" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="208d7d85-b6fc-461d-b334-5d759eac817cfileName">ReturnInputString</con:setting></con:settings><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="0dc7b153-87a7-4354-9488-fe29723da6e6" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:shad="http://shadow.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <shad:ReturnInputStringResponse>
+         <!--Optional:-->
+         <shad:ReturnInputStringResult>?</shad:ReturnInputStringResult>
+      </shad:ReturnInputStringResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://shadow.org/ReturnInputString"/></con:response><con:dispatchConfig/></con:mockOperation>
